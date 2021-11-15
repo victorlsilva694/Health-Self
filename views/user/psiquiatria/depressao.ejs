@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/homepage.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom"
+            data-sidebar-type="overlayed-sm-and-down">
+            <!-- Sticky alerts (toasts), empty container -->
+            <div class="sticky-alerts"></div>
+            <!-- Navbar -->
+            <nav class="navbar" style="background-color: dodgerblue;">
+                <div class="brand">
+                    <img style="width: 95%;" src="/images/care.png" alt="">
+                </div>
+                <h1 class="title-brand">Healf Self</h1>
+
+                <div class="user-information">
+                    <a href="#" class="username">
+                        <%= User.name + ' ' + User.lastname %>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Sidebar overlay -->
+            <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar">
+                    <div class="sidebar-menu">
+                        <!-- Sidebar brand -->
+                        <a href="#" class="sidebar-brand">
+                            Brand
+                        </a>
+                        <!-- Sidebar content with the search box -->
+                        <div class="sidebar-content">
+                            <button style="width: 100%; height: 50px;" class="btn btn-primary" id="button-redirect"
+                                type="button">Crie seu
+                                diário</button>
+                        </div>
+                        <!-- Sidebar links and titles -->
+                        <h5 class="sidebar-title">Seja bem vindo!</h5>
+                        <div class="sidebar-divider"></div>
+                        <a href="/user/diario/posts" class="sidebar-link active">Meu diário</a>
+                        <a href="#" class="sidebar-link ">Pessoas com deficiência</a>
+                        <a href="#" class="sidebar-link">Pessoas com problemas psiquiátricos</a>
+                        <br />
+                        <div class="sidebar-divider"></div>
+                        <a href="#" class="sidebar-link">Ansiedade</a>
+                        <a href="#" class="sidebar-link">Depressão</a>
+                        <a href="#" class="sidebar-link">Sindrome do pânico</a>
+                        <a href="#" class="sidebar-link">Insônia</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <div class="container-fluid">
+                    <!-- First comes a content container -->
+                    <!-- Next comes a card -->
+                    <div class="card">
+                        <details class="collapse-panel w-800 mw-full">
+                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                            <summary class="collapse-header">
+                                O que é depressão?
+                            </summary>
+                            <div class="collapse-content">
+                                Trata-se de um transtorno conhecido há vários milênios. Ele consiste em uma série de
+                                sintomas que fazem a pessoa perder o interesse e o prazer pela vida, aparentemente sem
+                                motivo. A medicina sabe que a depressão provoca alterações no organismo, como dores,
+                                inflamações e baixa imunidade. As causas não são muito claras, mas sabe-se que a
+                                genética tem grande influência.
+                                <br>
+                                <br>
+                                Fonte:
+                                https://sigatransformando.com/2020/03/15/77-motivos-para-continuar-vivendo-e-desistir-do-suicidio/
+                            </div>
+                        </details>
+                        <details class="collapse-panel w-800 mw-full">
+                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                            <summary class="collapse-header">
+                                Como saber se a pessoa tem depressão?
+                            </summary>
+                            <div class="collapse-content">
+                                perda ou aumento de apetite;<br>
+                                perda ou aumento de sono;<br>
+                                perda ou ganho de peso;<br>
+                                fadiga;<br>
+                                sentimento de inutilidade e baixa autoestima;<br>
+                                pensamento de morte;<br>
+                                dificuldade de atenção e memorização;<br>
+                                dificuldade para tomar decisões;<br>
+                                redução do desejo sexual;<br>
+                                agitação ou redução drástica da velocidade da fala e dos movimentos;<br>
+                                dor de cabeça.<br>
+                                <br>
+                                <br>
+                                Fonte:
+                                https://www.medley.com.br/podecontar/preciso-ajuda/depressao-voce-tem-ou-pode-ajudar
+                            </div>
+                        </details>
+                        <details class="collapse-panel w-800 mw-full">
+                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                            <summary class="collapse-header">
+                                O que acontece no cérebro?
+                            </summary>
+                            <div class="collapse-content">
+
+                                Os neurotransmissores cerebrais ligados à sensação de bem-estar, em especial
+                                noradrenalina e serotonina, sofrem alterações. O resultado é uma mudança no
+                                funcionamento do córtex pré-frontal, que executa atividades cognitivas, do sistema
+                                límbico, que regula as emoções, e do hipotálamo, ligado à fome, ao sono e à libido.
+                                <br><br>
+                                Fonte:
+                                https://www.medley.com.br/podecontar/preciso-ajuda/depressao-voce-tem-ou-pode-ajudar
+                            </div>
+                        </details>
+                        <details class="collapse-panel w-800 mw-full">
+                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                            <summary class="collapse-header">
+                                O que ajuda a sair dessa?
+                            </summary>
+                            <div class="collapse-content">
+
+                                1. Faça para a pessoa uma pergunta clara e objetiva: “Você está bem?”
+                                2. Deixe a pessoa falar à vontade. Não interrompa, nem tente consolá-la com frases do
+                                tipo “mas você tem tudo na vida” ou “isso vai passar”.
+                                3. Convença a pessoa a procurar ajuda profissional. Explique a ela que esse é um
+                                problema médico que pode ser tratado.
+
+                                <br><br>
+                                Fonte:
+                                https://www.medley.com.br/podecontar/preciso-ajuda/depressao-voce-tem-ou-pode-ajudar
+                            </div>
+                        </details>
+                        <details class="collapse-panel w-800 mw-full">
+                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                            <summary class="collapse-header">
+                                E para finalizar alguns motivos para não desistir!
+                            </summary>
+                            <div class="collapse-content">
+                                Tomar banho de chuva outra vez;<br>
+                                Ouvir um Eu te amo;<br>
+                                Poder dizer isso de volta;<br>
+                                Roubar um chocolate, ou esconder o meu só pra mim;<br>
+                                Passar um dia inteiro longe de casa;<br>
+                                Viajar para conhecer alguém;<br>
+                                Tomar banhos quentes;<br>
+                                Ver pessoas sorrindo
+                                E mesmo sem vontade, acabar sorrindo com elas;<br>
+                                Mudar a vida de alguém;<br>
+                                Superar uma decepção;<br>
+                                Assistir filme com amigos por ligação de vídeo;<br>
+                                Ouvir sua música favorita pela milésima vez;<br>
+                                Dormir em uma ligação;<br>
+                                Achar fotos antigas e ver como você melhorou;<br>
+                                Conhecer novas pessoas;<br>
+                                Conquistar algo de valor;<br>
+                                Plantar algo e ver florescendo;<br>
+                                Fazer uma tatuagem, nem que seja de Henna;<br>
+                                Aprender a cozinhar;<br>
+                                Tirar fotos engraçadas;<br>
+                                Cantar em um Karaôke;<br>
+                                Dançar feito maluco(a);<br>
+                                Fazer a própria versão de uma música;<br>
+                                Ter piadas internas;<br>
+                                Ver raios;<br>
+                                Ver a lua;<br>
+                                Se apaixonar;<br>
+                                Olhar pela janela do carro;<br>
+                                Sentir o cheiro do mar;<br>
+                                Vídeogames;<br>
+                                Fazer memórias;<br>
+                                Sentir a brisa em um dia quente;<br>
+                                Mudar o corte de cabelo;<br>
+                                Encarar seus medos;<br>
+                                Fazer algo que valeu a pena;<br>
+                                Ajudar alguém;<br>
+                                Dormir;<br>
+                                Acordar e sentir o cheiro do café;<br>
+                                Estalar uma parte do corpo;<br>
+                                Usar meias engraçadas;<br>
+                                Tirar nota máxima em algo;<br>
+                                Fazer algo que você realmente queira;<br>
+                                Passar o dia sem fazer nada (adoro);<br>
+                                Ver vídeos durante a madrugada;<br>
+                                Virar o travesseiro para o lado frio;<br>
+                                Ter um animal de estimação;<br>
+                                Ver a loucurinha dele quando você chega;<br>
+                                Chorar no ombro de alguém;<br>
+                                Chorar loucamente no final de um filme;<br>
+                                Secar as lágrimas e seguir depois como se nada tivesse acontecido;<br>
+                                Assistir aos fogos de ano novo;<br>
+                                Seu próximo aniversário (estar lá é importante);<br>
+                                Olhar as nuvens;<br>
+                                Andar de barco (ainda quero);<br>
+                                Encontrar um lugar no mundo onde você se encaixe;<br>
+                                Ir a festas, mesmo sem querer, e depois amar ter ido;<br>
+                                Experimentar a vida;<br>
+                                Estar simplesmente vivo ainda, quando muitos não estão mais;<br>
+                                Ver a si mesmo(a) se recuperando quando parecia impossível; (amei)<br>
+                                Ser uma inspiração;<br>
+                                VOCÊ É IMPORTANTE;<br>
+                                VOCÊ faz outras pessoas felizes, ainda que só uma;<br>
+                                Só existe um VOCÊ em todo mundo;<br>
+                                Suas cicatrizes sararão;<br>
+                                Existe uma solução;<br>
+                                Você nunca estará só;<br>
+                                A tendência é melhorar, aguenta mais um pouco;<br>
+                                <br>
+                                <br>
+                                Fonte:
+                                https://sigatransformando.com/2020/03/15/77-motivos-para-continuar-vivendo-e-desistir-do-suicidio/
+                            </div>
+                        </details>
+
+                        <div class="img-depression" style="width: 95%; overflow: hidden; position: relative; left: 2.5%; top: 3vh; height: 400px; border-radius: 10px;">
+                            <img style="width: 100%; opacity: .9; position: relative; top: -45vh; border-radius: 10px;"  src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Requires halfmoon.js for toggling sidebar, and toasts -->
+            <script src="path/to/halfmoon.js"></script>
+            <script src="/javascript/dashboard.js"></script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+</body>
+
+</html>

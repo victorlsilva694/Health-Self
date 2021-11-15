@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/homepage.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom"
+            data-sidebar-type="overlayed-sm-and-down">
+            <!-- Sticky alerts (toasts), empty container -->
+            <div class="sticky-alerts"></div>
+            <!-- Navbar -->
+            <nav class="navbar" style="background-color: dodgerblue;">
+                <div class="brand">
+                    <img style="width: 95%;" src="/images/care.png" alt="">
+                </div>
+                <h1 class="title-brand">Healf Self</h1>
+
+                <div class="user-information">
+                    <a href="#" class="username">
+                        <%= User.name + ' ' + User.lastname %>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Sidebar overlay -->
+            <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar">
+                    <div class="sidebar-menu">
+                        <!-- Sidebar brand -->
+                        <a href="#" class="sidebar-brand">
+                            Brand
+                        </a>
+                        <!-- Sidebar content with the search box -->
+                        <div class="sidebar-content">
+                            <button style="width: 100%; height: 50px;" class="btn btn-primary" id="button-redirect" type="button">Crie seu
+                                diário</button>
+                        </div>
+                        <!-- Sidebar links and titles -->
+                        <h5 class="sidebar-title">Seja bem vindo!</h5>
+                        <div class="sidebar-divider"></div>
+                        <a href="/user/diario/posts" class="sidebar-link active">Meu diário</a>
+                        <a href="#" class="sidebar-link ">Pessoas com deficiência</a>
+                        <a href="#" class="sidebar-link">Pessoas com problemas psiquiátricos</a>
+                        <br />
+                        <div class="sidebar-divider"></div>
+                        <a href="/user/ansiedade" class="sidebar-link">Ansiedade</a>
+                        <a href="#" class="sidebar-link">Depressão</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <div class="container-fluid">
+                    <!-- First comes a content container -->
+                    <!-- Next comes a card -->
+                    <div class="card">
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="w-400 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <div class="card p-0">
+                                            <!-- p-0 = padding: 0 -->
+                                            <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80" class="img-fluid rounded-top" alt="...">
+                                            <!-- rounded-top = rounded corners on the top -->
+                                            <!-- Nested content container inside card -->
+                                            <div class="content">
+                                                <h2 class="content-title">
+                                                    Transtorno de ansiedade
+                                                </h2>
+                                                <p class="text-muted">
+                                                    A ansiedade vem sendo cada vez mais apresentada, principalmente por jovens e adultos. 
+                                                    Clique em saiba mais para ver dicas, criar artigos científicos sobre o tema.
+                                                </p>
+                                                <div class="text-right">
+                                                    <!-- text-right = text-align: right -->
+                                                    <a href="/user/ansiedade" class="btn">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="w-400 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <div class="card p-0">
+                                            <!-- p-0 = padding: 0 -->
+                                            <img src="https://images.unsplash.com/photo-1512080701059-1cbffe38d1c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80" class="img-fluid rounded-top" alt="...">
+                                            <!-- rounded-top = rounded corners on the top -->
+                                            <!-- Nested content container inside card -->
+                                            <div class="content">
+                                                <h2 class="content-title">
+                                                    Depressão
+                                                </h2>
+                                                <p class="text-muted">
+                                                    A depressão é conhecida como a doença mental mais perigosa do século, principalmente por pessoas jovens
+                                                    e adultos. Clique em saiba mais para ver dicas, criar artigos científicos sobre o tema.
+                                                </p>
+                                                <div class="text-right">
+                                                    <!-- text-right = text-align: right -->
+                                                    <a href="/user/depressao" class="btn">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm">
+                                    <div class="w-400 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <div class="card p-0">
+                                            <!-- p-0 = padding: 0 -->
+                                            <img src="https://images.unsplash.com/photo-1603336540413-009bd9dc5133?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid rounded-top" alt="...">
+                                            <!-- rounded-top = rounded corners on the top -->
+                                            <!-- Nested content container inside card -->
+                                            <div class="content">
+                                                <h2 class="content-title">
+                                                    Deficiência Auditiva
+                                                </h2>
+                                                <p class="text-muted">
+                                                    A deficiência auditiva por muitas as vezes gera dificuldades entre as pessoas que convivem ao lado do deficiente.
+                                                    Clique em saiba mais para ver dicas de como ajudar essas pessoas, crie artigos científicos sobre o tema.
+                                                </p>
+                                                <div class="text-right">
+                                                    <!-- text-right = text-align: right -->
+                                                    <a onclick="VisualDisabledPage()" href="#" class="btn">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Requires halfmoon.js for toggling sidebar, and toasts -->
+            <script src="path/to/halfmoon.js"></script>
+            <script src="/javascript/dashboard.js"></script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+</body>
+
+</html>
